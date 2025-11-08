@@ -6,16 +6,21 @@
 }
 
 body {
-    /* font-family: 'Pixelify Sans'; */
     font-family: 'Jersey 10';
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
-    display: grid;
-    place-items: center;
-    place-content: center;
-    gap: 50px;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
 }
+
 
 img, #catButton {
     background: black;
@@ -53,4 +58,28 @@ img, #catButton {
     margin: 0em 1em 0em 0em;
     padding: 0.5em 1em;
     border-radius: 1em;
+}
+
+
+@media (max-width: 600px) {
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    #counter {
+        font-size: 36pt;
+    }
+
+    #hps {
+        font-size: 24pt;
+    }
+
+    .shop > button,
+    .change-animation > button {
+        font-size: 16pt;
+        width: 100%;
+        max-width: 320px;
+        padding: 0.75em;
+    }
 }

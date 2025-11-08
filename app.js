@@ -13,7 +13,7 @@ let counterDisplay = document.getElementById("counter");
 let hpsDisplay = document.getElementById("hps");
 
 let happinessCount = 0;
-let hpsCount = 2000;
+let hpsCount = 0;
 let timeout = 500;
 
 let hasItem1 = false;

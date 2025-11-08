@@ -13,7 +13,7 @@ let counterDisplay = document.getElementById("counter");
 let hpsDisplay = document.getElementById("hps");
 
 let happinessCount = 0;
-let hpsCount = 0;
+let hpsCount = 2000;
 let timeout = 500;
 
 let hasItem1 = false;
@@ -27,15 +27,10 @@ let currentActionSprite = "assets/default_idle.gif";
 cat.addEventListener("click", function(){
     happinessCount++;
     updateDisplay();
-
     catImage.src = currentActionSprite;
-    catImage.height = 450;
-    catImage.width = 450;
 
     setTimeout(function() {
         catImage.src = currentIdleSprite;
-        catImage.height = 450;
-        catImage.width = 450;
     }, timeout);
 })
 

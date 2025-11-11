@@ -44,7 +44,6 @@ img {
   margin: 0 auto;
 }
 
-/* Tombol di shop */
 .shop > button {
   font: inherit;
   color: white;
@@ -89,8 +88,9 @@ img {
 
   .shop > button,
   .change-animation > button {
-    font-size: 14pt;
+    font-size: 16pt;
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
+    padding: 0.75em;
   }
 }

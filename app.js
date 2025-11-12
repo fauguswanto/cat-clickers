@@ -14,13 +14,21 @@ let hpsDisplay = document.getElementById("hps");
 
 let happinessCount = 0;
 let hpsCount = 0;
-let timeout = 500;
+let timeout = 4000;
 
 let hasItem1 = false;
 let hasItem2 = false;
 let hasItem3 = false;
 let currentIdleSprite = "assets/default_idle.png";
 let currentActionSprite = "assets/default_idle.gif";
+
+alert(`
+Cara Bermain Cat Clicker
+
+1. Klik kucing untuk menambah Happiness ❤️.
+2. Gunakan Happiness-mu untuk membeli item di toko.
+3. Setiap item memberi tambahan Happiness per detik (HPS) agar kamu bisa mendapatkan poin otomatis.
+4. Semakin banyak item kamu beli, semakin cepat kucingmu bahagia!`)
 
 
 // cat button
@@ -82,7 +90,6 @@ function updateDisplay() {
         animation1.addEventListener("click", function () {
             currentActionSprite = "assets/default_toy.gif";
             currentIdleSprite = "assets/default_toy.png";
-            timeout = 1000;
             catImage.src = currentIdleSprite;
         })
     } 
@@ -92,7 +99,6 @@ function updateDisplay() {
         animation2.addEventListener("click", function () {
             currentActionSprite = "assets/default_totebag.gif";
             currentIdleSprite = "assets/default_totebag.png";
-            timeout = 2000;
             catImage.src = currentIdleSprite;
         })
     } 
@@ -102,7 +108,6 @@ function updateDisplay() {
         animation3.addEventListener("click", function () {
             currentActionSprite = "assets/default_mp3.gif";
             currentIdleSprite = "assets/default_mp3.png";
-            timeout = 1000;
             catImage.src = currentIdleSprite;
         })
     } 
